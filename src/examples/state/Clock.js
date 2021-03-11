@@ -16,7 +16,6 @@ class Clock extends React.Component {
 
     componentWillUnmount() {
         clearInterval(this.TimerID)
-
     }
 
     tick() {
@@ -35,3 +34,18 @@ class Clock extends React.Component {
 }
 
 export default Clock;
+
+
+/*setValue(){
+      // Wrong
+    this.setState({
+        counter: this.state.counter + this.props.increment,
+    });
+
+    // Correct
+    this.setState((state, props) => ({
+        counter: state.counter + props.increment
+    }));
+
+}
+*/
