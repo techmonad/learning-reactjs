@@ -1,10 +1,20 @@
 import './App.css';
+import "./examples/composition/composition.css";
+import "./examples/checkbox/Checkbox.css";
+
 import Reservation from "./examples/Forms/Reservation";
+import WelcomeDialog from "./examples/composition/composition";
+import Table from "./examples/Table";
+import Example2 from "./examples/hooks/Hooks";
+import Checkbox from "./examples/checkbox/Checkbox";
+import Example from "./examples/hooks/Hooks";
 
 function App() {
     return (
         <div className="App">
-            <Reservation />
+            <Checkbox/>
+            {/*<Reservation />*/}
+            <Example/>
         </div>
     );
 }

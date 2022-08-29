@@ -1,13 +1,12 @@
 import React from "react";
 
-class   Reservation extends React.Component {
+class Reservation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             isGoing: true,
             numberOfGuests: 2
         };
-
         this.handleInputChange = this.handleInputChange.bind(this);
     }
 
@@ -15,10 +14,7 @@ class   Reservation extends React.Component {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
-
-        this.setState({
-            [name]: value
-        });
+        this.setState({[name]: value});
     }
 
     render() {
@@ -30,16 +26,18 @@ class   Reservation extends React.Component {
                         name="isGoing"
                         type="checkbox"
                         checked={this.state.isGoing}
-                        onChange={this.handleInputChange} />
+                        onChange={this.handleInputChange}
+                    />
                 </label>
-                <br />
+                <br/>
                 <label>
                     Number of guests:
                     <input
                         name="numberOfGuests"
                         type="number"
                         value={this.state.numberOfGuests}
-                        onChange={this.handleInputChange} />
+                        onChange={this.handleInputChange}
+                    />
                 </label>
             </form>
         );
