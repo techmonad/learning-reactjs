@@ -1,6 +1,5 @@
-import {FaTrash} from "react-icons/all";
 import {useState} from "react";
-import {FaStar} from "react-icons/fa";
+import {FaStar, FaTrash} from "react-icons/fa";
 import colorData from "../../data/colors.json"
 
 const createArray = length => [...Array(length)]
