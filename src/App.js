@@ -2,15 +2,16 @@ import './App.css';
 import "./examples/composition/composition.css";
 import "./examples/checkbox/Checkbox.css";
 
-import Checkbox from "./examples/checkbox/Checkbox";
-import Example from "./examples/hooks/Hooks";
+import Hello from "./examples/Hello";
+import Clock from "./examples/Clock";
+import EmployeeForm from "./examples/EmployeeForm";
 
 function App() {
     return (
         <div className="App">
-            <Checkbox/>
-            {/*<Reservation />*/}
-            <Example/>
+       {/*  <Hello name="Bob"/>*/}
+     {/*       <Clock/>*/}
+            <EmployeeForm/>
         </div>
     );
 }
